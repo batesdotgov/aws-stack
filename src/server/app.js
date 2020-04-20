@@ -1,4 +1,5 @@
 const express = require('express')
+const path = require('path')
 const knex = require('knex')
 const knexConfig = require('../../knexfile')
 
@@ -20,7 +21,9 @@ app.get('/users', async (req, res) => {
 
 // # stress test
 app.get('/loaderio-27c1c3d48849223b76e0e32caa0583de.txt', (req, res) => {
-  return res.sendFile('./loaderio-27c1c3d48849223b76e0e32caa0583de.txt')
+  return res.sendFile(
+    '/src/server/loaderio-27c1c3d48849223b76e0e32caa0583de.txt',
+  )
 })
 
 module.exports = app
