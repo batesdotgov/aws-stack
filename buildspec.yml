@@ -7,6 +7,8 @@ phases:
     commands:
       - echo Installing source NPM dependencies...
       - npm install
+      - echo Creating Database...
+      - npm run db:init
       - echo Migrating Database to Latest...
       - npm run db:migrate
   build:
@@ -22,5 +24,6 @@ artifacts:
   files:
     - src/**/*
     - knexfile.js
+    - db.js
     - package.json
     - node_modules/**/*

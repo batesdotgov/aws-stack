@@ -6,6 +6,7 @@
   "scripts": {
     "test": "jest",
     "start": "node src/index.js",
+    "db:init": "node db.js",
     "db:migrate": "knex migrate:latest",
     "knex": "knex"
   },
