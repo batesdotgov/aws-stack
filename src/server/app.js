@@ -1,5 +1,7 @@
 const express = require("express");
-const db = require("../../knexfile");
+const knexConfig = require("../../knexfile");
+
+const db = knex(knexConfig);
 
 const app = express();
 
