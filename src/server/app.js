@@ -12,7 +12,8 @@ app.get("/secret", (req, res) => {
 });
 
 app.get("/users", async (req, res) => {
-  return await db("users");
+  const users = await db("users");
+  return res.json({ users });
 });
 
 module.exports = app;
