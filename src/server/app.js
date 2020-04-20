@@ -22,7 +22,7 @@ app.get('/users', async (req, res) => {
 // # stress test
 app.get('/loaderio-27c1c3d48849223b76e0e32caa0583de.txt', (req, res) => {
   return res.sendFile(
-    '/src/server/loaderio-27c1c3d48849223b76e0e32caa0583de.txt',
+    path.join(__dirname, './loaderio-27c1c3d48849223b76e0e32caa0583de.txt'),
   )
 })
 
