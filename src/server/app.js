@@ -1,8 +1,8 @@
 const express = require("express");
+const knex = require("knex");
 const knexConfig = require("../../knexfile");
 
 const db = knex(knexConfig);
-
 const app = express();
 
 app.get("/", (req, res) => {
