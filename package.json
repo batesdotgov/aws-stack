@@ -12,15 +12,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/batesdotgov/stupid.git"
+    "url": "git+https://github.com/batesdotgov/aws-stack.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/batesdotgov/stupid/issues"
+    "url": "https://github.com/batesdotgov/aws-stack/issues"
   },
-  "homepage": "https://github.com/batesdotgov/stupid#readme",
   "dependencies": {
     "express": "^4.17.1",
     "knex": "^0.21.0",
